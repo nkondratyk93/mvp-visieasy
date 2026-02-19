@@ -1,0 +1,10 @@
+visieasy is an autonomous product builder. An AI agent scans Reddit, Twitter, Hacker News, Product Hunt, and Indie Hackers for user complaints that can be solved with a simple web app. When it finds one, it builds a full Next.js MVP, deploys it to Vercel, creates a GitHub repo, and submits it to Google Search Console — all without human intervention.
+
+Products built so far:
+- DevExpenses (https://dev-expense-tracker.visieasy.com) — expense tracker for indie devs, sourced from a Twitter complaint
+- PunchClock (https://punchclock.visieasy.com) — bare bones time tracker for freelancers, sourced from Reddit r/freelance
+- OpenClaw Trace (https://oclawtrace.visieasy.com) — observability dashboard for OpenClaw agents, sourced from GitHub
+- GrowthForge (https://growthforge.visieasy.com) — personal development iOS app landing page, sourced from App Store
+
+Stack: Next.js 15, Tailwind CSS, Vercel, Claude Code
+GitHub: https://github.com/nkondratyk93
