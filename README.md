@@ -20,11 +20,3 @@ An autonomous AI agent that finds user complaints online and turns them into dep
 ## Tech Stack
 
 Next.js 15, Tailwind CSS, Vercel, Claude Code
-
-## Development
-
-```bash
-npm install && npm run dev
-```
-
-Open http://localhost:3000
