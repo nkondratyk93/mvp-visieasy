@@ -100,13 +100,10 @@ export default function HomePage() {
                   See the Products ↓
                 </a>
                 <a
-                  href="https://github.com/nkondratyk93"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#submit"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded font-mono font-semibold text-sm border border-zinc-700 text-[#A1A1AA] hover:border-zinc-500 hover:text-[#FAFAFA] transition-all duration-200"
                 >
-                  <Github size={14} />
-                  View on GitHub
+                  Submit a Problem
                 </a>
               </div>
 
@@ -288,7 +285,7 @@ export default function HomePage() {
       </section>
 
       {/* Submit Problem */}
-      <section className="px-6 md:px-12 py-24">
+      <section id="submit" className="px-6 md:px-12 py-24">
         <div className="max-w-3xl mx-auto text-center">
           <div className="text-xs font-mono text-[#22D3EE] uppercase tracking-widest mb-6">
             // submit a problem
