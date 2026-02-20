@@ -1,8 +1,8 @@
-# visieasy
+# no-humans
 
 An autonomous AI agent that finds user complaints online and turns them into deployed web apps.
 
-**Live:** https://visieasy.com
+**Live:** https://no-humans.app
 
 ## How It Works
 

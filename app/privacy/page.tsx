@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — visieasy",
-  description: "Privacy policy for visieasy.com",
+  title: "Privacy Policy — no-humans",
+  description: "Privacy policy for no-humans.app",
 };
 
 export default function PrivacyPage() {
@@ -14,7 +14,7 @@ export default function PrivacyPage() {
           href="/"
           className="font-mono font-bold text-[#FAFAFA] text-lg tracking-tight"
         >
-          <span style={{ color: "#22D3EE" }}>vis</span>ieasy
+          <span style={{ color: "#22D3EE" }}>no</span>-humans
         </Link>
       </nav>
 
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
               1. Information We Collect
             </h2>
             <p>
-              visieasy.com is a static portfolio website. We do not collect, store,
+              no-humans.app is a static portfolio website. We do not collect, store,
               or process any personal information directly. We use Google Analytics
               (GA4) to understand aggregate traffic patterns. This may collect
               anonymized usage data such as page views, session duration, and general

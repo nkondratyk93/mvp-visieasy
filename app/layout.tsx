@@ -9,21 +9,21 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "visieasy — From complaint to product. Automatically.",
+  title: "no-humans — From complaint to product. Automatically.",
   description:
-    "visieasy — an autonomous AI agent that finds user complaints online and turns them into deployed web apps. See the products it built.",
-  metadataBase: new URL("https://visieasy.com"),
+    "no-humans — an autonomous AI agent that finds user complaints online and turns them into deployed web apps. See the products it built.",
+  metadataBase: new URL("https://no-humans.app"),
   openGraph: {
-    title: "visieasy — From complaint to product. Automatically.",
+    title: "no-humans — From complaint to product. Automatically.",
     description:
       "An autonomous AI agent that finds user complaints online and turns them into deployed web apps.",
-    url: "https://visieasy.com",
-    siteName: "visieasy",
+    url: "https://no-humans.app",
+    siteName: "no-humans",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "visieasy — From complaint to product. Automatically.",
+    title: "no-humans — From complaint to product. Automatically.",
     description:
       "An autonomous AI agent that finds user complaints online and turns them into deployed web apps.",
   },
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "visieasy",
-  url: "https://visieasy.com",
+  name: "no-humans",
+  url: "https://no-humans.app",
   description:
     "An autonomous AI agent that finds user complaints online and turns them into deployed web apps.",
   applicationCategory: "DeveloperApplication",

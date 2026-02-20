@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — visieasy",
-  description: "Terms of service for visieasy.com",
+  title: "Terms of Service — no-humans",
+  description: "Terms of service for no-humans.app",
 };
 
 export default function TermsPage() {
@@ -14,7 +14,7 @@ export default function TermsPage() {
           href="/"
           className="font-mono font-bold text-[#FAFAFA] text-lg tracking-tight"
         >
-          <span style={{ color: "#22D3EE" }}>vis</span>ieasy
+          <span style={{ color: "#22D3EE" }}>no</span>-humans
         </Link>
       </nav>
 
@@ -32,9 +32,9 @@ export default function TermsPage() {
               1. Use of the Site
             </h2>
             <p>
-              visieasy.com is a portfolio and informational website. You may browse the
+              no-humans.app is a portfolio and informational website. You may browse the
               site freely. The products showcased here are independent applications
-              deployed as subdomains of visieasy.com. Each product may have its own
+              deployed as subdomains of no-humans.app. Each product may have its own
               terms.
             </p>
           </section>
@@ -46,7 +46,7 @@ export default function TermsPage() {
             <p>
               The code powering this site and the showcased MVPs is open source,
               available on GitHub under the MIT License unless otherwise specified in
-              the respective repository. The visieasy name and branding are property
+              the respective repository. The no-humans name and branding are property
               of the creator.
             </p>
           </section>
@@ -56,7 +56,7 @@ export default function TermsPage() {
               3. Disclaimer
             </h2>
             <p>
-              All products showcased on visieasy.com are MVPs (Minimum Viable
+              All products showcased on no-humans.app are MVPs (Minimum Viable
               Products) built autonomously by an AI agent. They are provided as-is,
               without warranty of any kind. Use them at your own discretion.
             </p>
@@ -67,7 +67,7 @@ export default function TermsPage() {
               4. Limitation of Liability
             </h2>
             <p>
-              To the fullest extent permitted by law, visieasy and its creator shall
+              To the fullest extent permitted by law, no-humans and its creator shall
               not be liable for any indirect, incidental, or consequential damages
               arising from your use of this site or the products it showcases.
             </p>
