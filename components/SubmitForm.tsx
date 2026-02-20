@@ -8,10 +8,13 @@ export function SubmitForm() {
   const [error, setError] = useState("");
   const [charCount, setCharCount] = useState(0);
 
-  async function handleSubmit(formData: FormData) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (status === "submitting") return;
     setStatus("submitting");
     setError("");
 
+    const formData = new FormData(e.currentTarget);
     const result = await submitProblem(formData);
 
     if (result.success) {
@@ -37,7 +40,7 @@ export function SubmitForm() {
   }
 
   return (
-    <form action={handleSubmit} className="flex flex-col gap-4 max-w-lg mx-auto">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-lg mx-auto">
       <div>
         <textarea
           name="problem"
@@ -77,7 +80,15 @@ export function SubmitForm() {
         className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-mono font-semibold text-sm transition-all duration-200 hover:opacity-90 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
         style={{ background: "#22D3EE", color: "#09090B" }}
       >
-        {status === "submitting" ? "Submitting..." : "Submit Problem"}
+        {status === "submitting" ? (
+          <>
+            <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+            </svg>
+            Submitting...
+          </>
+        ) : "Submit Problem"}
       </button>
     </form>
   );
