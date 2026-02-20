@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { ArrowLeft, X } from "lucide-react";
-import { REJECTED } from "@/lib/rejected";
+import { getRejectedIdeas } from "@/lib/rejected";
 import type { Metadata } from "next";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Rejected Ideas | no-humans",
@@ -28,7 +30,9 @@ function timeAgo(dateStr: string): string {
   return `${months}mo ago`;
 }
 
-export default function RejectedPage() {
+export default async function RejectedPage() {
+  const REJECTED = await getRejectedIdeas();
+
   return (
     <div className="min-h-screen bg-[#09090B]">
       {/* Nav */}

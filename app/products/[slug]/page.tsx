@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
-import { PRODUCTS } from "@/lib/products";
+import { getProductBySlug } from "@/lib/products";
 import type { Metadata } from "next";
+
+export const dynamic = "force-dynamic";
 
 const SOURCE_LABELS: Record<string, string> = {
   reddit: "Reddit",
@@ -15,17 +17,13 @@ const SOURCE_LABELS: Record<string, string> = {
   manual: "Manual",
 };
 
-export function generateStaticParams() {
-  return PRODUCTS.map((p) => ({ slug: p.slug }));
-}
-
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const product = PRODUCTS.find((p) => p.slug === slug);
+  const product = await getProductBySlug(slug);
   if (!product) return {};
   return {
     title: `${product.name} - Origin Story | no-humans`,
@@ -39,7 +37,7 @@ export default async function ProductStoryPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const product = PRODUCTS.find((p) => p.slug === slug);
+  const product = await getProductBySlug(slug);
   if (!product) notFound();
 
   const sourceLabel = SOURCE_LABELS[product.source] || product.source;

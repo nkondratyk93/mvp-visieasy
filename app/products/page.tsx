@@ -1,20 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Github, ArrowLeft } from "lucide-react";
-import { PRODUCTS } from "@/lib/products";
+import { getProducts } from "@/lib/products";
 import { ProductsGrid } from "@/components/ProductsGrid";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "All Products | no-humans",
-  description: `Browse all ${PRODUCTS.length} products built autonomously by no-humans — an AI agent that finds complaints online and ships working web apps.`,
+  description:
+    "Browse all products built autonomously by no-humans — an AI agent that finds complaints online and ships working web apps.",
   openGraph: {
     title: "All Products | no-humans",
-    description: `${PRODUCTS.length} autonomous MVPs shipped from user complaints.`,
+    description: "Autonomous MVPs shipped from user complaints.",
     url: "https://no-humans.app/products",
   },
 };
 
-export default function ProductsPage() {
+export default async function ProductsPage() {
+  const products = await getProducts();
+
   return (
     <div className="min-h-screen bg-[#09090B]">
       {/* Nav */}
@@ -51,7 +56,7 @@ export default function ProductsPage() {
             // all products
           </div>
           <h1 className="font-mono font-bold text-3xl md:text-4xl text-[#FAFAFA] mb-4">
-            {PRODUCTS.length} products shipped
+            {products.length} products shipped
           </h1>
           <p className="text-[#71717A] text-sm font-mono max-w-xl">
             Every product started as a complaint on the internet. The agent
@@ -63,7 +68,7 @@ export default function ProductsPage() {
       {/* Products grid with filters */}
       <section className="px-6 md:px-12 pb-20">
         <div className="max-w-7xl mx-auto">
-          <ProductsGrid products={PRODUCTS} />
+          <ProductsGrid products={products} />
         </div>
       </section>
 

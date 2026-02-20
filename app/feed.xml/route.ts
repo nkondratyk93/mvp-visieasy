@@ -1,9 +1,12 @@
-import { PRODUCTS } from "@/lib/products";
-import { REJECTED } from "@/lib/rejected";
+import { getProducts } from "@/lib/products";
+import { getRejectedIdeas } from "@/lib/rejected";
 
-export function GET() {
+export const dynamic = "force-dynamic";
+
+export async function GET() {
+  const PRODUCTS = await getProducts();
+  const REJECTED = await getRejectedIdeas();
   const baseUrl = "https://no-humans.app";
-
   const productItems = PRODUCTS.map(
     (p) => `    <item>
       <title>🚀 Shipped: ${escapeXml(p.name)}</title>

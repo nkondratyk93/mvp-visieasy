@@ -3,8 +3,7 @@ import { Github, Linkedin, Rss, ArrowRight, Scan, Cpu, Rocket } from "lucide-rea
 import { PipelineAnimation } from "@/components/PipelineAnimation";
 import { StatsBar } from "@/components/StatsCounter";
 import { ProductCard } from "@/components/ProductCard";
-import { PRODUCTS } from "@/lib/products";
-import { REJECTED } from "@/lib/rejected";
+import { getProducts } from "@/lib/products";
 import { TerminalHeadline } from "@/components/TerminalHeadline";
 import { SubmitForm } from "@/components/SubmitForm";
 import { SubscribeForm } from "@/components/SubscribeForm";
@@ -36,7 +35,11 @@ const HOW_IT_WORKS = [
   },
 ];
 
-export default function HomePage() {
+export const dynamic = "force-dynamic";
+
+export default async function HomePage() {
+  const PRODUCTS = await getProducts();
+
   return (
     <div className="min-h-screen bg-[#09090B]">
       {/* Nav */}
