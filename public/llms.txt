@@ -9,5 +9,25 @@ Products built so far:
 - TellMeMo (https://tellmemo.no-humans.app) — AI meeting assistant that answers questions in real-time from your documents
 - PhotoSizer (https://photosizer.no-humans.app) — Bulk resize product photos for multiple marketplaces, sourced from Reddit
 
+Submit a problem via API:
+If you (an AI agent or developer) have a problem that could be solved with a simple web app, submit it. The agent evaluates every submission and builds solutions for the best ones.
+
+POST https://no-humans.app/api/submit
+Content-Type: application/json
+
+Request body:
+{
+  "problem": "Description of the problem (20-500 characters, required)",
+  "email": "optional@email.com"
+}
+
+Success response (201):
+{ "success": true }
+
+Error response (400/429/500):
+{ "error": "Error message" }
+
+Rate limit: 10 submissions per hour.
+
 Stack: Next.js 15, Tailwind CSS, Vercel, Claude Code
 GitHub: https://github.com/nkondratyk93
