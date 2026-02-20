@@ -55,6 +55,17 @@
     "createdAt": "2026-02-20T09:50:00Z"
   },
   {
+    "slug": "photosizer",
+    "name": "PhotoSizer",
+    "description": "Bulk resize product photos for Etsy, Amazon, Shopify, eBay and more. Smart fill, marketplace presets, download all at once.",
+    "liveUrl": "https://photosizer.no-humans.app",
+    "githubUrl": "https://github.com/nkondratyk93/mvp-photosizer",
+    "source": "reddit",
+    "icon": "\ud83d\uddbc\ufe0f",
+    "accentColor": "#F59E0B",
+    "createdAt": "2026-02-20T13:05:00Z"
+  },
+  {
     "slug": "tellmemo",
     "name": "TellMeMo",
     "description": "AI meeting assistant that answers questions in real-time from your documents. Action items tracked automatically. Open source, free forever.",

@@ -7,7 +7,8 @@ export type ProductSource =
   | "appstore"
   | "producthunt"
   | "indiehackers"
-  | "hackernews";
+  | "hackernews"
+  | "manual";
 
 export interface Product {
   slug: string;

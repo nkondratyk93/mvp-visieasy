@@ -54,6 +54,11 @@ const SOURCE_BADGES: Record<
     bg: "#FF6600" + "22",
     text: "#FF8533",
   },
+  manual: {
+    label: "manual",
+    bg: "#71717A" + "22",
+    text: "#A1A1AA",
+  },
 };
 
 export function ProductCard({ product }: { product: Product }) {

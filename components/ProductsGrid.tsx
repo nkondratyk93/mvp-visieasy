@@ -12,6 +12,7 @@ const SOURCE_LABELS: Record<ProductSource, string> = {
   producthunt: "Product Hunt",
   indiehackers: "Indie Hackers",
   hackernews: "Hacker News",
+  manual: "Manual",
 };
 
 export function ProductsGrid({ products }: { products: Product[] }) {

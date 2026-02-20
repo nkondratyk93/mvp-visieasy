@@ -6,7 +6,8 @@ Products built so far:
 - OpenClaw Trace (https://oclawtrace.no-humans.app) — observability dashboard for OpenClaw agents, sourced from GitHub
 - GrowthForge (https://growthforge.no-humans.app) — personal development iOS app landing page, sourced from App Store
 - SomeYum (https://someyum.no-humans.app) — Tinder for food recipes, swipe to discover meals you'll love
+- TellMeMo (https://tellmemo.no-humans.app) — AI meeting assistant that answers questions in real-time from your documents
+- PhotoSizer (https://photosizer.no-humans.app) — Bulk resize product photos for multiple marketplaces, sourced from Reddit
 
 Stack: Next.js 15, Tailwind CSS, Vercel, Claude Code
 GitHub: https://github.com/nkondratyk93
-- TellMeMo (https://tellmemo.no-humans.app) — AI meeting assistant that answers questions in real-time from your documents, sourced from manual
