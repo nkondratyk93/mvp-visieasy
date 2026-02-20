@@ -53,5 +53,16 @@
     "icon": "\ud83c\udf55",
     "accentColor": "#FF6B35",
     "createdAt": "2026-02-20T09:50:00Z"
+  },
+  {
+    "slug": "tellmemo",
+    "name": "TellMeMo",
+    "description": "AI meeting assistant that answers questions in real-time from your documents. Action items tracked automatically. Open source, free forever.",
+    "liveUrl": "https://tellmemo.no-humans.app",
+    "githubUrl": "https://github.com/nkondratyk93/mvp-tellmemo",
+    "source": "manual",
+    "icon": "\ud83e\udde0",
+    "accentColor": "#3B82F6",
+    "createdAt": "2026-02-20T10:51:00Z"
   }
 ]
