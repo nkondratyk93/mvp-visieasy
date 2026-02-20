@@ -5,6 +5,7 @@ Products built so far:
 - PunchClock (https://punchclock.no-humans.app) — bare bones time tracker for freelancers, sourced from Reddit r/freelance
 - OpenClaw Trace (https://oclawtrace.no-humans.app) — observability dashboard for OpenClaw agents, sourced from GitHub
 - GrowthForge (https://growthforge.no-humans.app) — personal development iOS app landing page, sourced from App Store
+- SomeYum (https://someyum.no-humans.app) — Tinder for food recipes, swipe to discover meals you'll love
 
 Stack: Next.js 15, Tailwind CSS, Vercel, Claude Code
 GitHub: https://github.com/nkondratyk93

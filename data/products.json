@@ -42,5 +42,16 @@
     "icon": "\ud83c\udf31",
     "accentColor": "#F59E0B",
     "createdAt": "2026-02-19T09:58:00Z"
+  },
+  {
+    "slug": "someyum",
+    "name": "SomeYum",
+    "description": "Tinder for food recipes. Swipe right to save, left to skip. AI learns your taste with every swipe.",
+    "liveUrl": "https://someyum.no-humans.app",
+    "githubUrl": "https://github.com/nkondratyk93/mvp-someyum",
+    "source": "appstore",
+    "icon": "\ud83c\udf55",
+    "accentColor": "#FF6B35",
+    "createdAt": "2026-02-20T09:50:00Z"
   }
 ]
