@@ -10,12 +10,14 @@ interface StatItem {
   isText?: boolean;
 }
 
-const STATS: StatItem[] = [
-  { value: "4", label: "MVPs shipped", suffix: "" },
-  { value: "5", label: "platforms monitored" },
-  { value: "100", label: "autonomous", suffix: "%" },
-  { value: "< 2 hrs", label: "complaint to deploy", isText: true },
-];
+function getStats(productCount: number): StatItem[] {
+  return [
+    { value: String(productCount), label: "MVPs shipped", suffix: "" },
+    { value: "5", label: "platforms monitored" },
+    { value: "100", label: "autonomous", suffix: "%" },
+    { value: "< 2 hrs", label: "complaint to deploy", isText: true },
+  ];
+}
 
 function CountUp({
   target,
@@ -55,7 +57,7 @@ function CountUp({
   );
 }
 
-export function StatsBar() {
+export function StatsBar({ productCount = 4 }: { productCount?: number }) {
   const ref = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(false);
 
@@ -75,7 +77,7 @@ export function StatsBar() {
 
   return (
     <div ref={ref} className="grid grid-cols-2 md:grid-cols-4 gap-px bg-zinc-800">
-      {STATS.map((stat, i) => (
+      {getStats(productCount).map((stat, i) => (
         <div
           key={i}
           className="bg-[#09090B] px-8 py-10 flex flex-col gap-2"

@@ -2,10 +2,21 @@
 
 import { ExternalLink, Github } from "lucide-react";
 import { useState } from "react";
-import type { Product } from "@/lib/products";
+import type { Product, ProductSource } from "@/lib/products";
+
+function timeAgo(dateStr: string): string {
+  const diff = Date.now() - new Date(dateStr).getTime();
+  const days = Math.floor(diff / 86400000);
+  if (days < 1) return "today";
+  if (days === 1) return "1d ago";
+  if (days < 30) return `${days}d ago`;
+  const months = Math.floor(days / 30);
+  if (months === 1) return "1mo ago";
+  return `${months}mo ago`;
+}
 
 const SOURCE_BADGES: Record<
-  Product["source"],
+  ProductSource,
   { label: string; bg: string; text: string }
 > = {
   reddit: {
@@ -27,6 +38,21 @@ const SOURCE_BADGES: Record<
     label: "app store",
     bg: "#0071E3" + "22",
     text: "#4DA3FF",
+  },
+  producthunt: {
+    label: "product hunt",
+    bg: "#DA552F" + "22",
+    text: "#E8744F",
+  },
+  indiehackers: {
+    label: "indie hackers",
+    bg: "#1F6FEB" + "22",
+    text: "#5B9BF5",
+  },
+  hackernews: {
+    label: "hacker news",
+    bg: "#FF6600" + "22",
+    text: "#FF8533",
   },
 };
 
@@ -76,11 +102,18 @@ export function ProductCard({ product }: { product: Product }) {
               >
                 {product.name}
               </h3>
-              <div
-                className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-widest mt-1"
-                style={{ background: badge.bg, color: badge.text }}
-              >
-                via {badge.label}
+              <div className="flex items-center gap-2 mt-1">
+                <div
+                  className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-widest"
+                  style={{ background: badge.bg, color: badge.text }}
+                >
+                  via {badge.label}
+                </div>
+                {product.createdAt && (
+                  <span className="text-[10px] font-mono text-[#52525B]">
+                    {timeAgo(product.createdAt)}
+                  </span>
+                )}
               </div>
             </div>
           </div>

@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "devexpenses",
+    "name": "DevExpenses",
+    "description": "Project expense tracker for indie devs. Track what you spend per project, export reports, stay in the black.",
+    "liveUrl": "https://dev-expense-tracker.no-humans.app",
+    "githubUrl": "https://github.com/nkondratyk93/mvp-dev-expense-tracker",
+    "source": "twitter",
+    "icon": "\ud83d\udcb8",
+    "accentColor": "#22D3EE",
+    "createdAt": "2026-02-17T21:43:00Z"
+  },
+  {
+    "slug": "punchclock",
+    "name": "PunchClock",
+    "description": "Bare bones time tracker for freelancers. No subscriptions, no bloat. Just start, stop, and bill.",
+    "liveUrl": "https://punchclock.no-humans.app",
+    "githubUrl": "https://github.com/nkondratyk93/mvp-punchclock",
+    "source": "reddit",
+    "icon": "\u23f1",
+    "accentColor": "#A3E635",
+    "createdAt": "2026-02-18T10:42:00Z"
+  },
+  {
+    "slug": "oclawtrace",
+    "name": "OpenClaw Trace",
+    "description": "Observability dashboard for OpenClaw agents. Watch your AI agents think, act, and ship in real time.",
+    "liveUrl": "https://oclawtrace.no-humans.app",
+    "githubUrl": "https://github.com/nkondratyk93/mvp-oclawtrace",
+    "source": "github",
+    "icon": "\ud83d\udd0d",
+    "accentColor": "#A78BFA",
+    "createdAt": "2026-02-19T06:43:00Z"
+  },
+  {
+    "slug": "growthforge",
+    "name": "GrowthForge",
+    "description": "Personal development iOS app landing page. Goal tracking, habit stacking, progress visualization.",
+    "liveUrl": "https://growthforge.no-humans.app",
+    "githubUrl": "https://github.com/nkondratyk93/mvp-growthforge",
+    "source": "appstore",
+    "icon": "\ud83c\udf31",
+    "accentColor": "#F59E0B",
+    "createdAt": "2026-02-19T09:58:00Z"
+  }
+]

@@ -42,12 +42,12 @@ export default function HomePage() {
           <span style={{ color: "#22D3EE" }}>no</span>-humans
         </div>
         <div className="flex items-center gap-6">
-          <a
-            href="#products"
+          <Link
+            href="/products"
             className="text-sm font-mono text-[#71717A] hover:text-[#FAFAFA] transition-colors"
           >
             products
-          </a>
+          </Link>
           <a
             href="https://github.com/nkondratyk93"
             target="_blank"
@@ -112,7 +112,7 @@ export default function HomePage() {
               {/* Mini stats */}
               <div className="flex flex-wrap gap-6 pt-4 border-t border-zinc-800">
                 {[
-                  { val: "4", label: "MVPs shipped" },
+                  { val: String(PRODUCTS.length), label: "MVPs shipped" },
                   { val: "5", label: "platforms scanned" },
                   { val: "0", label: "lines written by human" },
                 ].map((s, i) => (
@@ -225,18 +225,31 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4">
-            {PRODUCTS.map((product) => (
-              <ProductCard key={product.name} product={product} />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {PRODUCTS.slice(0, 6).map((product) => (
+              <ProductCard key={product.slug} product={product} />
             ))}
           </div>
+
+          {PRODUCTS.length > 6 && (
+            <div className="mt-8 text-center">
+              <Link
+                href="/products"
+                className="inline-flex items-center gap-2 text-sm font-mono transition-colors duration-150 hover:opacity-80"
+                style={{ color: "#A3E635" }}
+              >
+                View all {PRODUCTS.length} products
+                <ArrowRight size={14} />
+              </Link>
+            </div>
+          )}
         </div>
       </section>
 
       {/* Stats Bar */}
       <section className="border-b border-zinc-800">
         <div className="max-w-7xl mx-auto">
-          <StatsBar />
+          <StatsBar productCount={PRODUCTS.length} />
         </div>
       </section>
 
