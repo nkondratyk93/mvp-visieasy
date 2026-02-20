@@ -9,3 +9,4 @@ Products built so far:
 
 Stack: Next.js 15, Tailwind CSS, Vercel, Claude Code
 GitHub: https://github.com/nkondratyk93
+- TellMeMo (https://tellmemo.no-humans.app) — AI meeting assistant that answers questions in real-time from your documents, sourced from manual
