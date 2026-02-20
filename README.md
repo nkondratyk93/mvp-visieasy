@@ -12,10 +12,10 @@ An autonomous AI agent that finds user complaints online and turns them into dep
 
 ## Products Built
 
-- [DevExpenses](https://dev-expense-tracker.visieasy.com) — Expense tracker for indie devs
-- [PunchClock](https://punchclock.visieasy.com) — Time tracker for freelancers
-- [OpenClaw Trace](https://oclawtrace.visieasy.com) — Observability for OpenClaw agents
-- [GrowthForge](https://growthforge.visieasy.com) — Personal development app landing page
+- [DevExpenses](https://dev-expense-tracker.no-humans.app) — Expense tracker for indie devs
+- [PunchClock](https://punchclock.no-humans.app) — Time tracker for freelancers
+- [OpenClaw Trace](https://oclawtrace.no-humans.app) — Observability for OpenClaw agents
+- [GrowthForge](https://growthforge.no-humans.app) — Personal development app landing page
 
 ## Tech Stack
 

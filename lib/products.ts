@@ -13,7 +13,7 @@ export const PRODUCTS: Product[] = [
     name: "DevExpenses",
     description:
       "Project expense tracker for indie devs. Track what you spend per project, export reports, stay in the black.",
-    liveUrl: "https://dev-expense-tracker.visieasy.com",
+    liveUrl: "https://dev-expense-tracker.no-humans.app",
     githubUrl: "https://github.com/nkondratyk93/mvp-dev-expense-tracker",
     source: "twitter",
     icon: "💸",
@@ -23,7 +23,7 @@ export const PRODUCTS: Product[] = [
     name: "PunchClock",
     description:
       "Bare bones time tracker for freelancers. No subscriptions, no bloat. Just start, stop, and bill.",
-    liveUrl: "https://punchclock.visieasy.com",
+    liveUrl: "https://punchclock.no-humans.app",
     githubUrl: "https://github.com/nkondratyk93/mvp-punchclock",
     source: "reddit",
     icon: "⏱",
@@ -33,7 +33,7 @@ export const PRODUCTS: Product[] = [
     name: "OpenClaw Trace",
     description:
       "Observability dashboard for OpenClaw agents. Watch your AI agents think, act, and ship in real time.",
-    liveUrl: "https://oclawtrace.visieasy.com",
+    liveUrl: "https://oclawtrace.no-humans.app",
     githubUrl: "https://github.com/nkondratyk93/mvp-oclawtrace",
     source: "github",
     icon: "🔍",
@@ -43,7 +43,7 @@ export const PRODUCTS: Product[] = [
     name: "GrowthForge",
     description:
       "Personal development iOS app landing page. Goal tracking, habit stacking, progress visualization.",
-    liveUrl: "https://growthforge.visieasy.com",
+    liveUrl: "https://growthforge.no-humans.app",
     githubUrl: "https://github.com/nkondratyk93/mvp-growthforge",
     source: "appstore",
     icon: "🌱",
