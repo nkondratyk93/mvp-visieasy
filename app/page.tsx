@@ -1,11 +1,13 @@
 import Link from "next/link";
-import { Github, Linkedin, ArrowRight, Scan, Cpu, Rocket } from "lucide-react";
+import { Github, Linkedin, Rss, ArrowRight, Scan, Cpu, Rocket } from "lucide-react";
 import { PipelineAnimation } from "@/components/PipelineAnimation";
 import { StatsBar } from "@/components/StatsCounter";
 import { ProductCard } from "@/components/ProductCard";
 import { PRODUCTS } from "@/lib/products";
+import { REJECTED } from "@/lib/rejected";
 import { TerminalHeadline } from "@/components/TerminalHeadline";
 import { SubmitForm } from "@/components/SubmitForm";
+import { SubscribeForm } from "@/components/SubscribeForm";
 
 const HOW_IT_WORKS = [
   {
@@ -287,6 +289,32 @@ export default function HomePage() {
               </div>
             </footer>
           </blockquote>
+        </div>
+      </section>
+
+      {/* Weekly Digest */}
+      <section className="px-6 md:px-12 py-16 border-b border-zinc-800">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="text-xs font-mono text-[#A3E635] uppercase tracking-widest mb-4">
+            // weekly digest
+          </div>
+          <h2 className="font-mono font-bold text-2xl md:text-3xl text-[#FAFAFA] mb-3">
+            Stay in the loop.
+          </h2>
+          <p className="text-[#71717A] text-sm mb-6">
+            Get a weekly update: what got built, what got rejected, and what the
+            agent is scanning next.
+          </p>
+          <SubscribeForm />
+          <div className="mt-4">
+            <a
+              href="/feed.xml"
+              className="inline-flex items-center gap-1.5 text-xs font-mono text-[#52525B] hover:text-[#71717A] transition-colors"
+            >
+              <Rss size={12} />
+              RSS feed
+            </a>
+          </div>
         </div>
       </section>
 
