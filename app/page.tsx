@@ -82,7 +82,7 @@ export default function HomePage() {
               <p className="text-base md:text-lg text-[#A1A1AA] leading-relaxed max-w-lg">
                 An AI agent scans Reddit, Twitter, and Hacker News for user
                 complaints. When it finds a problem that can be solved with a
-                simple web app — it builds one, deploys it, and ships it.{" "}
+                simple web app - it builds one, deploys it and ships it.{" "}
                 <span className="text-[#FAFAFA] font-medium">
                   All automatically.
                 </span>
