@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, ArrowRight, Scan, Cpu, Rocket } from "lucide-react";
+import { Github, Linkedin, ArrowRight, Scan, Cpu, Rocket } from "lucide-react";
 import { PipelineAnimation } from "@/components/PipelineAnimation";
 import { StatsBar } from "@/components/StatsCounter";
 import { ProductCard } from "@/components/ProductCard";
@@ -340,6 +340,15 @@ export default function HomePage() {
             >
               <Github size={12} />
               github
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nikolay-kondratyk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-xs font-mono text-[#52525B] hover:text-[#71717A] transition-colors"
+            >
+              <Linkedin size={12} />
+              contact
             </a>
           </div>
         </div>
