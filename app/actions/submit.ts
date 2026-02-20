@@ -25,6 +25,9 @@ export async function submitProblem(
   }
 
   const supabase = getSupabase();
+  if (!supabase) {
+    return { success: false, error: "Service temporarily unavailable." };
+  }
 
   // Rate limit: max 3 submissions per IP per hour
   const hdrs = await headers();

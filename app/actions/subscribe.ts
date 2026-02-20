@@ -15,6 +15,9 @@ export async function subscribe(formData: FormData): Promise<SubscribeResult> {
   }
 
   const supabase = getSupabase();
+  if (!supabase) {
+    return { success: false, error: "Service temporarily unavailable." };
+  }
 
   const { error } = await supabase.from("subscribers").insert({
     email: email.trim().toLowerCase(),

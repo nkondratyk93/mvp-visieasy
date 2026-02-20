@@ -62,6 +62,7 @@ function rowToProduct(row: ProductRow): Product {
 
 export async function getProducts(): Promise<Product[]> {
   const supabase = getSupabase();
+  if (!supabase) return [];
   const { data, error } = await supabase
     .from("products")
     .select("*")
@@ -79,6 +80,7 @@ export async function getProductBySlug(
   slug: string
 ): Promise<Product | null> {
   const supabase = getSupabase();
+  if (!supabase) return null;
   const { data, error } = await supabase
     .from("products")
     .select("*")

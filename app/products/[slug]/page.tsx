@@ -4,7 +4,7 @@ import { ArrowLeft, ExternalLink, Github } from "lucide-react";
 import { getProductBySlug } from "@/lib/products";
 import type { Metadata } from "next";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 const SOURCE_LABELS: Record<string, string> = {
   reddit: "Reddit",

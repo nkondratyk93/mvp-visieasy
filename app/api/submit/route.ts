@@ -28,6 +28,9 @@ export async function POST(req: NextRequest) {
   }
 
   const supabase = getSupabase();
+  if (!supabase) {
+    return NextResponse.json({ error: "Service temporarily unavailable." }, { status: 500 });
+  }
 
   // Rate limit: max 10 submissions globally per hour
   const oneHourAgo = new Date(Date.now() - 3600000).toISOString();

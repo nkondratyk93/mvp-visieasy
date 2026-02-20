@@ -4,7 +4,7 @@ import { Github, ArrowLeft } from "lucide-react";
 import { getProducts } from "@/lib/products";
 import { ProductsGrid } from "@/components/ProductsGrid";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "All Products | no-humans",

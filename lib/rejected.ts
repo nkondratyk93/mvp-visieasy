@@ -37,6 +37,7 @@ function rowToRejected(row: RejectedRow): RejectedIdea {
 
 export async function getRejectedIdeas(): Promise<RejectedIdea[]> {
   const supabase = getSupabase();
+  if (!supabase) return [];
   const { data, error } = await supabase
     .from("rejected_ideas")
     .select("*")
