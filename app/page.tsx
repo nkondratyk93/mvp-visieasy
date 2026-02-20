@@ -49,6 +49,12 @@ export default function HomePage() {
           >
             products
           </Link>
+          <Link
+            href="/rejected"
+            className="text-sm font-mono text-[#71717A] hover:text-[#FAFAFA] transition-colors"
+          >
+            rejected
+          </Link>
           <a
             href="https://github.com/nkondratyk93"
             target="_blank"

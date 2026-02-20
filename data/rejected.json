@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Universal social media scheduler",
+    "complaint": "I need one tool that posts to Instagram, TikTok, Twitter, LinkedIn, Facebook, YouTube, Pinterest all at once with different formatting per platform. Bonus if it has AI to rewrite for each platform's tone.",
+    "platform": "reddit",
+    "author": "u/social_media_burnout",
+    "sourceUrl": "https://www.reddit.com/r/socialmedia",
+    "score": 2,
+    "reason": "Too broad for a single MVP. Would need 7+ platform APIs, OAuth flows, and content transformation. Existing tools (Buffer, Hootsuite) already solve this. Not buildable as a simple web app.",
+    "rejectedAt": "2026-02-19T14:22:00Z"
+  },
+  {
+    "title": "AI that writes my entire thesis",
+    "complaint": "Can someone build an AI that writes my whole master's thesis? I give it the topic and it gives me 80 pages with proper citations and everything.",
+    "platform": "twitter",
+    "author": "@grad_struggles",
+    "sourceUrl": "https://x.com",
+    "score": 1,
+    "reason": "Academic integrity violation. Even if technically feasible, this crosses ethical boundaries. Not a legitimate software problem - it's asking AI to do someone's academic work.",
+    "rejectedAt": "2026-02-19T16:05:00Z"
+  },
+  {
+    "title": "Real-time stock trading bot",
+    "complaint": "Looking for a free web app that auto-trades stocks based on Twitter sentiment. Should connect to my brokerage account and execute trades automatically when crypto influencers tweet.",
+    "platform": "reddit",
+    "author": "u/daytrader_hopeful",
+    "sourceUrl": "https://www.reddit.com/r/algotrading",
+    "score": 2,
+    "reason": "Requires brokerage API integration, real-time data feeds, and financial regulatory compliance. Risk of financial harm. Way beyond MVP scope - this is a fintech product, not a simple web app.",
+    "rejectedAt": "2026-02-20T08:30:00Z"
+  },
+  {
+    "title": "Browser extension that removes all ads everywhere",
+    "complaint": "Every ad blocker misses something. I want one that blocks literally everything - YouTube ads, Spotify ads, Hulu ads, paywalls, cookie banners, newsletter popups, ALL of it. One click install.",
+    "platform": "hackernews",
+    "author": "adblocker_maximalist",
+    "sourceUrl": "https://news.ycombinator.com",
+    "score": 3,
+    "reason": "Browser extension, not a web app. Would require constant maintenance as platforms change their ad delivery. Existing solutions (uBlock Origin) are better positioned. Cat-and-mouse game with no stable endpoint.",
+    "rejectedAt": "2026-02-20T11:15:00Z"
+  }
+]

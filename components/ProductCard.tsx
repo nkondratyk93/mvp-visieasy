@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
 import { useState } from "react";
 import type { Product, ProductSource } from "@/lib/products";
@@ -66,8 +67,9 @@ export function ProductCard({ product }: { product: Product }) {
   const badge = SOURCE_BADGES[product.source];
 
   return (
-    <div
-      className="relative rounded border transition-all duration-300 overflow-hidden cursor-default"
+    <Link
+      href={`/products/${product.slug}`}
+      className="block relative rounded border transition-all duration-300 overflow-hidden cursor-pointer"
       style={{
         borderColor: hovered ? product.accentColor + "66" : "#27272A",
         background: "#18181B",
@@ -131,27 +133,23 @@ export function ProductCard({ product }: { product: Product }) {
 
         {/* Links */}
         <div className="flex items-center gap-3 pt-2 border-t border-zinc-800">
-          <a
-            href={product.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-xs font-mono transition-colors duration-150 hover:opacity-80"
+          <span
+            onClick={(e) => { e.preventDefault(); window.open(product.liveUrl, "_blank"); }}
+            className="flex items-center gap-1.5 text-xs font-mono transition-colors duration-150 hover:opacity-80 cursor-pointer"
             style={{ color: product.accentColor }}
           >
             <ExternalLink size={12} />
             live app
-          </a>
-          <a
-            href={product.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-xs font-mono text-[#71717A] hover:text-[#A1A1AA] transition-colors duration-150"
+          </span>
+          <span
+            onClick={(e) => { e.preventDefault(); window.open(product.githubUrl, "_blank"); }}
+            className="flex items-center gap-1.5 text-xs font-mono text-[#71717A] hover:text-[#A1A1AA] transition-colors duration-150 cursor-pointer"
           >
             <Github size={12} />
             github
-          </a>
+          </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

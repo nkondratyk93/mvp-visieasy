@@ -8,7 +8,11 @@
     "source": "twitter",
     "icon": "\ud83d\udcb8",
     "accentColor": "#22D3EE",
-    "createdAt": "2026-02-17T21:43:00Z"
+    "createdAt": "2026-02-17T21:43:00Z",
+    "complaint": "I need a simple project expense tracker. Not QuickBooks, not a spreadsheet. Just something where I can log what I spent on each project and see if I'm in the red or black.",
+    "complaintAuthor": "@agusvrancic",
+    "complaintUrl": "https://x.com/agusvrancic/status/2021695646529368287",
+    "score": 8
   },
   {
     "slug": "punchclock",
@@ -19,7 +23,11 @@
     "source": "reddit",
     "icon": "\u23f1",
     "accentColor": "#A3E635",
-    "createdAt": "2026-02-18T10:42:00Z"
+    "createdAt": "2026-02-18T10:42:00Z",
+    "complaint": "Looking for a bare bones open source time tracker. Every time tracker I find either wants a subscription, has 500 features I don't need, or both. I just want to start a timer, stop it, and see how long I worked. That's it.",
+    "complaintAuthor": "u/freelance_dev_42",
+    "complaintUrl": "https://www.reddit.com/r/freelance/comments/1qwb6y5",
+    "score": 7
   },
   {
     "slug": "oclawtrace",
@@ -30,7 +38,11 @@
     "source": "github",
     "icon": "\ud83d\udd0d",
     "accentColor": "#A78BFA",
-    "createdAt": "2026-02-19T06:43:00Z"
+    "createdAt": "2026-02-19T06:43:00Z",
+    "complaint": "Running 10+ autonomous agents and I have zero visibility into what they're doing. I need a dashboard that shows me heartbeat status, step counts, errors, and cost per agent in real time.",
+    "complaintAuthor": "Mykola",
+    "complaintUrl": "https://github.com/Tell-Me-Mo/openclaw-trace",
+    "score": 10
   },
   {
     "slug": "growthforge",
@@ -41,7 +53,11 @@
     "source": "appstore",
     "icon": "\ud83c\udf31",
     "accentColor": "#F59E0B",
-    "createdAt": "2026-02-19T09:58:00Z"
+    "createdAt": "2026-02-19T09:58:00Z",
+    "complaint": "iOS app combining OKRs, habit tracking, journaling with mood tagging, AI coaching, gamification (XP/achievements), and progress analytics. Free, iPhone only.",
+    "complaintAuthor": "Mykola",
+    "complaintUrl": "https://apps.apple.com/ua/app/growthforge-achieve-more/id6742810169",
+    "score": 10
   },
   {
     "slug": "someyum",
@@ -52,7 +68,11 @@
     "source": "appstore",
     "icon": "\ud83c\udf55",
     "accentColor": "#FF6B35",
-    "createdAt": "2026-02-20T09:50:00Z"
+    "createdAt": "2026-02-20T09:50:00Z",
+    "complaint": "Recipe apps are overwhelming. I don't want to scroll through 10,000 recipes. Just show me one at a time and let me swipe yes or no. Like Tinder but for food.",
+    "complaintAuthor": "Mykola",
+    "complaintUrl": "https://visieasy.com",
+    "score": 9
   },
   {
     "slug": "photosizer",
@@ -63,7 +83,11 @@
     "source": "reddit",
     "icon": "\ud83d\uddbc\ufe0f",
     "accentColor": "#F59E0B",
-    "createdAt": "2026-02-20T13:05:00Z"
+    "createdAt": "2026-02-20T13:05:00Z",
+    "complaint": "Does anyone have a system for resizing product photos for multiple platforms at once? I list to Etsy/Amazon/Shopify etc. Every platform has different image size requirements. I waste about 30-45 minutes per batch.",
+    "complaintAuthor": "DesignerSale7560",
+    "complaintUrl": "https://www.reddit.com/r/ecommerce/comments/1r9268q",
+    "score": 6
   },
   {
     "slug": "tellmemo",
@@ -74,6 +98,10 @@
     "source": "manual",
     "icon": "\ud83e\udde0",
     "accentColor": "#3B82F6",
-    "createdAt": "2026-02-20T10:51:00Z"
+    "createdAt": "2026-02-20T10:51:00Z",
+    "complaint": "Every meeting I'm scrambling to find answers in docs while someone's asking me a question. I need an AI that sits in the meeting, listens, and pulls answers from my documents in real time.",
+    "complaintAuthor": "Mykola",
+    "complaintUrl": "https://tellmemo.io",
+    "score": 10
   }
 ]

@@ -20,6 +20,10 @@ export interface Product {
   icon: string;
   accentColor: string;
   createdAt: string;
+  complaint?: string;
+  complaintAuthor?: string;
+  complaintUrl?: string;
+  score?: number;
 }
 
 export const PRODUCTS: Product[] = (productsData as Product[]).sort(
