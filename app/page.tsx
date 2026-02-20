@@ -5,6 +5,7 @@ import { StatsBar } from "@/components/StatsCounter";
 import { ProductCard } from "@/components/ProductCard";
 import { PRODUCTS } from "@/lib/products";
 import { TerminalHeadline } from "@/components/TerminalHeadline";
+import { SubmitForm } from "@/components/SubmitForm";
 
 const HOW_IT_WORKS = [
   {
@@ -286,26 +287,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA / Final section */}
+      {/* Submit Problem */}
       <section className="px-6 md:px-12 py-24">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="text-xs font-mono text-[#71717A] uppercase tracking-widest mb-6">
-            // the machine keeps running
+          <div className="text-xs font-mono text-[#22D3EE] uppercase tracking-widest mb-6">
+            // submit a problem
           </div>
           <h2 className="font-mono font-bold text-3xl md:text-4xl text-[#FAFAFA] mb-4">
-            More MVPs shipping soon.
+            Got a problem? We&apos;ll build the fix.
           </h2>
           <p className="text-[#71717A] text-sm mb-8">
-            The agent is scanning right now. When it finds the next complaint
-            worth building, it will.
+            Describe what frustrates you. The agent evaluates every submission
+            and builds solutions for the best ones.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
+          <SubmitForm />
+          <div className="mt-8">
             <a
               href="https://github.com/nkondratyk93"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded font-mono font-semibold text-sm transition-all duration-200 hover:opacity-90"
-              style={{ background: "#22D3EE", color: "#09090B" }}
+              className="inline-flex items-center gap-2 text-xs font-mono text-[#52525B] hover:text-[#71717A] transition-colors"
             >
               <Github size={14} />
               Follow on GitHub
